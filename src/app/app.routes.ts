@@ -3,7 +3,7 @@ import { MetaGuard } from '@ngx-meta/core';
 
 import { WrapperComponent } from '@shared/layouts/wrapper/wrapper.component';
 
-const ROUTES: Routes = [
+export const ROUTES: Routes = [
     { path: '', redirectTo: 'hashtags', pathMatch: 'full' },
     {
         path: '', component: WrapperComponent, canActivateChild: [MetaGuard], children: [

@@ -1,24 +1,24 @@
+import { NgxPaginationModule } from 'ngx-pagination';
+import { TweetDatePipe } from './../../pipes/date.pipe';
+import { PipeHashtags } from './../../pipes/shorten.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { TranslateModule } from '@ngx-translate/core';
-
-import { PaginationModule } from '@shared/pagination';
-
 import { TweetsComponent } from './tweets.component';
 
 // Pipes
 import { ShortenStringPipe } from '../../pipes/shorten.pipe';
 import { NumberFormatPipe } from '../../pipes/number.pipe';
-import { MomentPipe } from '../../pipes/moment.pipe';
 
 @NgModule({
     declarations: [
         TweetsComponent,
         ShortenStringPipe,
         NumberFormatPipe,
-        MomentPipe
+        TweetDatePipe,
+        PipeHashtags
     ],
     exports: [TweetsComponent],
     imports: [
@@ -26,7 +26,7 @@ import { MomentPipe } from '../../pipes/moment.pipe';
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
-        PaginationModule
+        NgxPaginationModule
     ]
 
 })

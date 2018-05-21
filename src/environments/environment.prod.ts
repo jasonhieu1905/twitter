@@ -1,6 +1,6 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://jsonplaceholder.typicode.com/',
+    apiUrl: 'http://localhost:5000/',
     localeFormat: 'en-US',
     defaultLanguage: 'en'
 };

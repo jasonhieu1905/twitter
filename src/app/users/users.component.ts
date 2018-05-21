@@ -1,3 +1,5 @@
+import { TweetModel } from './../shared/tweets/tweets.model';
+import { Constant } from './../shared/constant';
 import { Component, HostBinding } from '@angular/core';
 
 import { UsersService } from './users.service';
@@ -12,9 +14,9 @@ import { UsersService } from './users.service';
 export class UsersComponent {
 
     @HostBinding('class') classList = 'full-height';
-
     constructor(
         public usersService: UsersService
     ) {
     }
+
 }

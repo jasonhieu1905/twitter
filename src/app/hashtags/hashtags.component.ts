@@ -1,3 +1,5 @@
+import { TweetModel } from './../shared/tweets/tweets.model';
+import { Constant } from './../shared/constant';
 import { Component, HostBinding } from '@angular/core';
 
 import { HashtagsService } from './hashtags.service';

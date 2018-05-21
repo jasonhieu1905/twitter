@@ -14,3 +14,16 @@ export class ShortenStringPipe implements PipeTransform {
         return value;
     }
 }
+
+@Pipe({
+    name: 'hashtagsFormat'
+})
+export class PipeHashtags implements PipeTransform {
+    transform(value: string[], numberDisplay = 2): any {
+        if (value && value.length > numberDisplay) {
+            return value.slice(0,numberDisplay).join(', ');
+        } else {
+            return value.join(', ');
+        }
+    }
+}

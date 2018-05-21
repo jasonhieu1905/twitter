@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { TransferState } from '@angular/platform-browser';
-import { Observable } from 'rxjs/Observable';
 
 import { environment } from '../../../environments/environment';
 
@@ -39,7 +37,6 @@ export class HttpService {
     private getHeaderOptions() {
         const headerOptions = {
             'Accept': 'application/json',
-            'Access-Control-Allow-Credentials': 'true',
             'Access-Control-Max-Age': 3600
         };
         const headers = new HttpHeaders((<any>Object).assign(headerOptions));
