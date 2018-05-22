@@ -11,7 +11,7 @@ and
  + Clone this project https://github.com/artenepo/twitter_scrape and follow instruction to set up data
  + Move to folder 'twitter' and go to command line :
     - 1. 'npm install' to download all libraries
-    - 2. Go to 'environment.ts' and point to server that u set up. Could be local or running live server.
+    - 2. Go to 'environment.ts' and point to server that u set up. Could be local (normally localhost:5000).
     - 3. 'ng serve' will automatically start on port 4200. Enter URL 'http://localhost:4200'
     ( Note that: current twitter_scrape restrict to call api since they dont set 'allow-origin: *'). I tried to pass by this step by 'enable cross origin sharing' on chrome (https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en).
 
