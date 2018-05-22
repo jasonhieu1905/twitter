@@ -6,19 +6,19 @@ A simple project built with Angular5 in following features :
  
 # Demo 
 access this link : https://twitter-hashtag.firebaseapp.com/ (with fake api data)
-
+and
 # Set up
- + Clone this project https://github.com/artenepo/twitter_scrape to your local environment and follow instruction to set up data
+ + Clone this project https://github.com/artenepo/twitter_scrape and follow instruction to set up data
  + Move to folder 'twitter' and go to command line :
-    - 1. 'npm install'
-    - 2. Go to 'environment.ts' and point to server that u set up. Could be local or running live server  
+    - 1. 'npm install' to download all libraries
+    - 2. Go to 'environment.ts' and point to server that u set up. Could be local or running live server.
     - 3. 'ng serve' will automatically start on port 4200. Enter URL 'http://localhost:4200'
-    ( Note that, current Backend sources restrict to call api since they dont set allow-origin: *). I tried to pass by this step by 'enable cross origin sharing' (https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
+    ( Note that: current twitter_scrape restrict to call api since they dont set 'allow-origin: *'). I tried to pass by this step by 'enable cross origin sharing' on chrome (https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en).
 
 # Limitation
-    http://localhost:5000/hashtags/Python?pages_limit=10&wait=0
-    http://localhost:5000/users/Twitter?pages_limit=10&wait=0
-  + API seems does not support with param 'tag' or 'user'. So the fir st time I load with 
+    http://localhost:5000/hashtags/Python?pages_limit=10&wait=0&tag='#abc'
+    http://localhost:5000/users/Twitter?pages_limit=10&wait=0&user='#abc'
+  + API seems does not support with param 'tag' or 'user'. So the first time I load with 
   page_limit = 10 and wait = 0. Change these values in 'constant.ts'.
   + The next time when user search with hashtags. I do pagination as client side base on full records.
 
