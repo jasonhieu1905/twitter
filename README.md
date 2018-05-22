@@ -3,6 +3,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 A simple project built with Angular5 in following features : 
  + display a list of Tweets with different searching options and we will provide an API for interacting with Twitter
  + Responsive UI, can run in multiple device.
+ 
+# Demo 
+access this link : https://twitter-hashtag.firebaseapp.com/ (with fake api data)
 
 # Set up
  + Clone this project https://github.com/artenepo/twitter_scrape to your local environment and follow instruction to set up data
